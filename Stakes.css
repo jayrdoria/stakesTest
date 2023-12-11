@@ -119,9 +119,9 @@
   }
 }
 
-@media (max-width: 595px) {
-  .what-is-stakes .page-title {
-    font-size: 2rem;
+@media (max-width: 576px) {
+  .what-is-stakes .page-description {
+    font-size: 1.25rem;
   }
 }
 
@@ -207,5 +207,97 @@
 @media (max-width: 576px) {
   .stakes-vip-tiers .vip-tiers-container .vip-tiers-list .vip-tiers-item {
     flex-direction: column;
+  }
+  .stakes-vip-tiers .vip-tiers-container .vip-tiers-list .vip-tiers-item p {
+    font-size: 1.25rem;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+/* vip-key-benefits */
+.vip-key-benefits {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Kanit", sans-serif;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vip-key-benefits .page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c2e35;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.vip-key-benefits .key-benefits-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  max-width: 1300px;
+}
+.vip-key-benefits .key-benefits-container .key-benefits-item {
+  flex-basis: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+.vip-key-benefits
+  .key-benefits-container
+  .key-benefits-item
+  .key-benefits-image-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.vip-key-benefits .key-benefits-container .key-benefits-item .benefits-title {
+  font-weight: bold;
+  color: #2c2e35;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 15px 0;
+}
+
+.vip-key-benefits .key-benefits-container .key-benefits-item p {
+  font-weight: 300;
+}
+
+/* Responsive design for vip-key-benefits */
+
+@media (max-width: 991px) {
+  .vip-key-benefits .key-benefits-container {
+    flex-direction: column;
+  }
+  .vip-key-benefits .key-benefits-container .key-benefits-item {
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  .vip-key-benefits .key-benefits-container .key-benefits-item p {
+    padding-left: 30px;
+  }
+  .vip-key-benefits .key-benefits-container {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vip-key-benefits .key-benefits-container .key-benefits-item {
+    flex-direction: column;
+  }
+  .vip-key-benefits .key-benefits-container .key-benefits-item p {
+    padding-left: 0;
+  }
+  .vip-key-benefits .key-benefits-container .key-benefits-item .benefits-title,
+  .vip-key-benefits .key-benefits-container .key-benefits-item p {
+    font-size: 1.25rem;
   }
 }
