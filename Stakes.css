@@ -57,6 +57,7 @@
   text-decoration: none !important;
   margin-top: 30px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .hero-banner .hero-content .hero-cta:hover {
@@ -299,5 +300,108 @@
   .vip-key-benefits .key-benefits-container .key-benefits-item .benefits-title,
   .vip-key-benefits .key-benefits-container .key-benefits-item p {
     font-size: 1.25rem;
+  }
+}
+
+/* vip-tier-comparison */
+
+.vip-tier-comparison-background {
+  background-color: #e6e7e9;
+}
+
+.vip-tier-comparison {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Kanit", sans-serif;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.vip-tier-comparison .page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c2e35;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.vip-tier-comparison .comparison-table-container {
+  padding-top: 50px;
+  max-width: 1200px;
+}
+
+.vip-tier-comparison .comparison-table-container .comparison-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-weight: 300;
+}
+
+/* Adjusting the width of the first column */
+.vip-tier-comparison .comparison-table tr td:first-child,
+.vip-tier-comparison .comparison-table tr th:first-child {
+  width: 40%;
+  text-align: left;
+  padding: 5px;
+}
+
+/* Adjust the rest of the headers to split the remaining width equally */
+.vip-tier-comparison .comparison-table tr th:not(:first-child) {
+  width: 15%; /* 60% remaining width divided by 4 columns */
+}
+
+/* Styling for even rows */
+.vip-tier-comparison .comparison-table tr:nth-child(even) {
+  background-color: #bcbdc0; /* Set the background color for even rows */
+}
+
+/* Add padding to the bottom of the cells in the first row */
+.vip-tier-comparison .comparison-table tr:first-child th,
+.vip-tier-comparison .comparison-table tr:first-child td {
+  padding-bottom: 10px; /* Adjust the value as needed */
+}
+
+.vip-tier-comparison .tier-comparison-cta {
+  display: inline-block;
+  padding: 1.5vh 50px;
+  background-color: #f5615e;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  text-decoration: none !important;
+  margin-top: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.vip-tier-comparison .tier-comparison-cta:hover {
+  color: #f5615e;
+  animation: pulse 1s infinite;
+}
+
+/* Responsive design for vip-tier-comparison */
+@media (max-width: 991px) {
+  .vip-tier-comparison {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .vip-tier-comparison {
+    width: 85%;
+  }
+  /* Adjusting the width of the first column */
+  .vip-tier-comparison .comparison-table tr td:first-child,
+  .vip-tier-comparison .comparison-table tr th:first-child {
+    width: 35%;
+  }
+
+  /* Adjust the rest of the headers to split the remaining width equally */
+  .vip-tier-comparison .comparison-table tr th:not(:first-child) {
+    width: 16.25%; /* 60% remaining width divided by 4 columns */
   }
 }
